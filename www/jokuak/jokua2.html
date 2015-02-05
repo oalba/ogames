@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <!--<link rel="stylesheet" type="text/css" href="css/index.css" />-->
+    <title>Jokua 2</title>
+  </head>
+  <body>
+<CENTER>
+<p>Demuestra lo rapido que eres.</p>
+1- Pulsa Start                                 <br>
+2- Pulsa derecha o izquierda según te lo digan.<br>
+3- Tienes 1 segundo para reaccionar y pulsar.  <br>
+4- Si tardas más, saldrá la palabra "TIEMPO".
+
+<form name="ausgabe">
+  <div align="center"><center><p></p>
+
+  </center></div><div align="center"><center><p><input value="Start" name="B3" onclick="tempo3()" style="font-family: Arial; font-size: 15pt;" type="button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+
+<script language="JavaScript">
+<!--
+
+function SymError()
+{
+  return true;
+}
+
+window.onerror = SymError;
+
+var SymRealWinOpen = window.open;
+
+function SymWinOpen(url, name, attributes)
+{
+  return (new Object());
+}
+
+window.open = SymWinOpen;
+
+//-->
+    </script>
+
+<script language="JavaScript">
+<!--
+
+function SymError()
+{
+  return true;
+}
+
+window.onerror = SymError;
+
+var SymRealWinOpen = window.open;
+
+function SymWinOpen(url, name, attributes)
+{
+  return (new Object());
+}
+
+window.open = SymWinOpen;
+
+//-->
+    </script>
+
+<script language="JavaScript"><!--
+/* Copyright (c) Torben Wolf | http://webmasterweb.de */
+x = 0;
+x2 = 0;
+x3 = 0;
+function tempo3()
+{
+x3 = 0;
+window.setTimeout("tempo()",1500);
+}
+function tempo()
+{
+document.ausgabe.versuche.value = x3;
+x = 0;
+x2 = 0;
+y = Math.random();
+if(y <= 0.5)
+{
+x = "1";
+}
+if(y >= 0.5)
+{
+x = "2";
+}
+if(x == "1")
+{
+document.ausgabe.text.value = "izquierda";
+}
+if(x == "2")
+{
+document.ausgabe.text.value = "derecha";
+}
+window.setTimeout("tempo2()",700);
+}
+function tempo2()
+{
+if(x2 == x)
+{
+document.ausgabe.text.value = "";
+x3 = x3+1;
+window.setTimeout("tempo()",200);
+}
+else
+if(x2 != x)
+{
+document.ausgabe.text.value = "¡ TIEMPO !";
+}
+}
+function gas()
+{
+x2 = "1";
+}
+function bremsen()
+{
+x2 = "2";
+}
+/* WebmasterWEB - Alles für den Webmaster | http://webmasterweb.de */ 
+// --></script><input name="text" size="10" style="border: thin solid rgb(0, 0, 0); background-color: rgb(255, 255, 0); font-family: Arial; font-size: 15pt; text-align: center;" type="text">
+  &nbsp;&nbsp;&nbsp;<input name="versuche" size="4" style="border: thin solid rgb(0, 0, 0); font-family: Arial; font-size: 15pt; background-color: rgb(255, 255, 0); text-align: center;" type="text">
+  </p>
+  </center></div><div align="center"><center><p><input value="IZQUIERDA" name="B1" onclick="gas()" style="font-family: Arial; font-size: 15pt;" type="button"> &nbsp;&nbsp; <input value="DERECHA" name="B2" onclick="bremsen()" style="font-family: Arial; font-size: 15pt;" type="button"></p>
+
+  </CENTER></div>
+</form>
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <!--<link rel="stylesheet" type="text/css" href="css/index.css" />-->
+    <title>Jokua 3</title>
+  </head>
+  <body>
+
+<table border=0 bgcolor=#FFFFFF cellpadding=4 align=center>
+<tr>
+<td align=center>
+<font color=#000000>
+<FORM>
+<SCRIPT LANGUAGE="JavaScript">
+
+var Players_Choice;
+var Computers_Choice;
+var Fin;
+
+var imageArray = new Array(3);
+for (var i=0 ; i<3 ; i++)
+imageArray[i] = new Image();
+imageArray[0].src="Irudiak/rock.gif";
+imageArray[1].src="Irudiak/scissors.gif";
+imageArray[2].src="Irudiak/paper.gif";
+
+function playGame(Choice) {
+
+Players_Choice=Choice;
+
+document.user_image.src = imageArray[Players_Choice-1].src;
+
+intervalID1 = setInterval('SwitchImage();',100);
+setTimeout('results(intervalID1);',700);
+}
+
+function SwitchImage(){
+Computers_Choice=(Math.round(Math.random()*2)+1);
+document.comp_image.src = imageArray[Computers_Choice-1].src;
+}
+
+
+function results(intervalID1) {
+
+clearInterval(intervalID1);
+
+/*if (    (Players_Choice ==  1 && Computers_Choice == 2) ||
+    (Players_Choice ==  2 && Computers_Choice == 3) ||
+    (Players_Choice ==  3 && Computers_Choice == 1)){
+win.value++;
+window.alert ("TU GANAS"); 
+document.write('GANAS');}
+
+else if ( Players_Choice ==  Computers_Choice ){
+tie.value++;
+window.alert ('IGUALES'); 
+document.write('EMPATE');}
+
+else {
+loss.value++;
+window.alert ('TU PIERDES'); 
+document.write('PIERDES');}*/
+}
+
+/*function clear_score() {
+
+loss.value=0
+win.value=0
+tie.value=0
+}*/
+
+//  End -->
+</script>
+</form>
+
+<h1>Piedra, Papel o Tijeras.</h1><p>
+<font face="Verdana" size="1" color="#000000">Escoge una opción, cliqueando encima del dibujo, y automáticamente se pondrá en marcha la partida.</font>
+</p>
+<a href="javascript:;" onClick=playGame(1);><img border=0 src="Irudiak/rock.gif" alt="Piedra"></a>   
+<a href="javascript:;" onClick=playGame(2);><img border=0 src="Irudiak/scissors.gif" alt="Tijeras"></a>   
+<a href="javascript:;" onClick=playGame(3);><img border=0 src="Irudiak/paper.gif" alt="Papel"></a><br>
+Piedra | Tijeras |  Papel
+<p><img border=0 NAME="user_image" src="Irudiak/rock.gif" >     
+  <img border=0 NAME="comp_image" src="Irudiak/paper.gif" ><br>
+    Tu        El PC </p>
+
+<!--<p>
+<INPUT TYPE="text" SIZE=2 MAXLENGTH=3 NAME="win" WIN.VALUE="0">  Ganadas
+<INPUT TYPE="text" SIZE=2 MAXLENGTH=3 NAME="loss" LOSS.VALUE="0">  Perdidas
+<INPUT TYPE="text" SIZE=2 MAXLENGTH=3 NAME="tie" TIE.VALUE="0">  Empates
+</p>
+<p> <input type=button value="Poner a Cero" onClick="clear_score()"></p>-->
+
+</font>
+</td>
+</tr>
+</table>
+  </body>
+</html>
