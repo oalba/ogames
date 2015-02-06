@@ -5,9 +5,7 @@
 /home/ubuntu/ogames/platforms/android/res/drawable-port-ldpi/screen.png \
 /home/ubuntu/ogames/platforms/android/res/drawable-land-hdpi/screen.png \
 /home/ubuntu/ogames/platforms/android/res/drawable-port-mdpi/screen.png \
-/home/ubuntu/ogames/platforms/android/res/drawable-xxhdpi/icon.png \
 /home/ubuntu/ogames/platforms/android/res/drawable-port-hdpi/screen.png \
-/home/ubuntu/ogames/platforms/android/res/drawable-hdpi/icon.png \
 /home/ubuntu/ogames/platforms/android/res/drawable/icon.png \
 /home/ubuntu/ogames/platforms/android/res/values/strings.xml \
 /home/ubuntu/ogames/platforms/android/res/drawable-land-xhdpi/screen.png \
@@ -17,9 +15,7 @@
 /home/ubuntu/ogames/platforms/android/ant-build/res/drawable-port-ldpi/screen.png \
 /home/ubuntu/ogames/platforms/android/ant-build/res/drawable-land-hdpi/screen.png \
 /home/ubuntu/ogames/platforms/android/ant-build/res/drawable-port-mdpi/screen.png \
-/home/ubuntu/ogames/platforms/android/ant-build/res/drawable-xxhdpi/icon.png \
 /home/ubuntu/ogames/platforms/android/ant-build/res/drawable-port-hdpi/screen.png \
-/home/ubuntu/ogames/platforms/android/ant-build/res/drawable-hdpi/icon.png \
 /home/ubuntu/ogames/platforms/android/ant-build/res/drawable/icon.png \
 /home/ubuntu/ogames/platforms/android/ant-build/res/drawable-land-xhdpi/screen.png \
 /home/ubuntu/ogames/platforms/android/ant-build/res/drawable-land-ldpi/screen.png \
@@ -28,8 +24,10 @@
 /home/ubuntu/ogames/platforms/android/assets/www/index.html \
 /home/ubuntu/ogames/platforms/android/assets/www/js \
 /home/ubuntu/ogames/platforms/android/assets/www/img \
+/home/ubuntu/ogames/platforms/android/assets/www/fondob.jpg \
 /home/ubuntu/ogames/platforms/android/assets/www/res \
 /home/ubuntu/ogames/platforms/android/assets/www/cordova_plugins.js \
+/home/ubuntu/ogames/platforms/android/assets/www/fondon.jpg \
 /home/ubuntu/ogames/platforms/android/assets/www/spec \
 /home/ubuntu/ogames/platforms/android/assets/www/odei-alba.gif \
 /home/ubuntu/ogames/platforms/android/assets/www/cordova.js \
