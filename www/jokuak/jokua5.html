@@ -522,7 +522,8 @@ function keyDown(DnEvents){
 </SCRIPT>
 </HEAD>
 
-<BODY BGCOLOR="#CCCCFF" TEXT="#000000" VLINK="#FF0000" ONLOAD="focus()">
+<!--<BODY BGCOLOR="#CCCCFF" TEXT="#000000" VLINK="#FF0000" ONLOAD="focus()">-->
+<BODY  background="../fondob.jpg" TEXT="#000000" VLINK="#FF0000" ONLOAD="focus()">
 <SCRIPT LANGUAGE="JavaScript">
 <!--
 
@@ -574,7 +575,7 @@ for (ia=0; ia<40; ia++){
  systm = ver.charAt(iln+1).toUpperCase()
 
 
-  document.write('<FORM NAME="TetriScript"><PRE><CENTER><INPUT TYPE="text" NAME="LINE" SIZE=15 VALUE ="SELECT LEVEL"><INPUT TYPE="text" NAME="PTS" SIZE=15 VALUE ="CLICK ROTATE "></CENTER></PRE><CENTER><INPUT TYPE="button" VALUE="START / RESET" ONCLICK="start()"></CENTER><HR><BR/><CENTER><INPUT TYPE="button" VALUE=" LEFT  " ONCLICK="LeftClick()"><INPUT TYPE="button" VALUE=" ROTATE " ONCLICK="RotateClick()"><INPUT TYPE="button" VALUE=" RIGHT " ONCLICK="RightClick()"></CENTER><CENTER><INPUT TYPE="button" VALUE="  DOWN  " ONCLICK="DownCheck()"></CENTER></FORM>')
+  document.write('<FORM NAME="TetriScript"><PRE><CENTER><INPUT TYPE="text" NAME="LINE" SIZE=15 VALUE ="SELECT LEVEL"><INPUT TYPE="text" NAME="PTS" SIZE=15 VALUE ="CLICK ROTATE "></CENTER></PRE><CENTER><INPUT TYPE="button" VALUE="START / RESET" ONCLICK="start()" style="color: white; background-color: black"></CENTER><HR><BR/><CENTER><INPUT TYPE="button" VALUE=" LEFT  " ONCLICK="LeftClick()" style="color: white; background-color: black"><INPUT TYPE="button" VALUE=" ROTATE " ONCLICK="RotateClick()" style="color: white; background-color: black"><INPUT TYPE="button" VALUE=" RIGHT " ONCLICK="RightClick()" style="color: white; background-color: black"></CENTER><CENTER><INPUT TYPE="button" VALUE="  DOWN  " ONCLICK="DownCheck()" style="color: white; background-color: black"></CENTER></FORM>')
 
 //-->
 </SCRIPT>
