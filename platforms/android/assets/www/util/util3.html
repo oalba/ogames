@@ -1,0 +1,102 @@
+<html>
+
+<head>
+
+<title>Proportions</title>
+
+
+<title>Regla de tres</title>
+<script language="JavaScript">
+
+function proport(){
+a=document.form1.a.value;
+b=document.form1.b.value;
+c=document.form1.c.value;
+d=document.form1.d.value
+e=document.form1.readout.value;
+if(a=="x"||a=="X" ){
+	 answer=(c*b)/d;
+	document.form1.a.value=answer;
+	document.form1.readout.value=e+"\nx="+c+"*"+b+"÷"+ d+"\n"+"x="+answer;
+	}
+if(b=="x"||b=="X" ){
+	 answer=(a*d)/c;
+	document.form1.b.value=answer;
+	document.form1.readout.value=e+"\nx="+a+"*"+d+"÷"+c+"\n"+"x="+ answer;
+	}
+if(c=="x" ||c=="X"){
+	 answer=(a*d)/b;
+	document.form1.c.value=answer;
+	document.form1.readout.value=e+"\nx="+a+"*"+d+"÷"+b+"\n"+"x="+ answer;
+	}
+if(d=="x" ||d=="X"){
+	 answer=(b*c)/a;
+	document.form1.d.value=answer;
+	document.form1.readout.value=e+"\nx="+b+"*"+c+"÷"+a+"\n"+"x="+ answer;
+	}
+
+
+}
+
+</script>
+</head>
+
+<body text="#000000" link="#ff0000" vlink="#ff8000" alink="#0000ff" background="../fondob.jpg">
+
+<h3 align="center"><font size="3">Regla de tres</font></h3>
+<form name="form1">
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="383" bgcolor="#ffffff">
+    <tr>
+      <td colspan="4" width="383"><font size="-1" color="#000000" face="arial">
+      Entra los valores y una x para la incógnita:<br>
+&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td width="96">
+      <div align="center">
+        <b>A</b>&nbsp;<input TYPE="text" NAME="a" SIZE="5"></div>
+      </td>
+      <td width="33"></td>
+      <td width="96">
+      <div align="center">
+        <b>C</b>&nbsp;<input TYPE="text" NAME="c" SIZE="5"></div>
+      </td>
+    </tr>
+    <tr height="10">
+      <td width="96"><hr></td>
+      <td width="33">&nbsp;&nbsp;=&nbsp;</td>
+      <td width="96"><hr></td>
+    </tr>
+    <tr>
+      <td width="96">
+      <div align="center">
+        <b>B</b>&nbsp;<input TYPE="text" NAME="b" SIZE="5"></div>
+      </td>
+      <td width="33"></td>
+      <td width="96"><center>
+      <p><b>D</b>&nbsp;<input type="text" name="d" size="5"></p>
+      </center></td>
+    </tr>
+    <tr>
+      <td colspan="3" width="225"><br>
+      <center>
+      <p><input type="button" value="Calcular" onclick="proport()"></p>
+      </center></td>
+    </tr>
+    <tr>
+      <td colspan="3" width="225">
+      <p align="center">
+      <textarea name="readout" columns="18" rows="3" value cols="30">He aquí el resultado:</textarea></td>
+    </tr>
+    <tr>
+      <td colspan="3" width="225"><center>
+      <p><input type="reset" value="Borrar"></p>
+      </center>
+      </td>
+    </tr>
+  </table>
+</form>
+
+</body>
+
+</html>

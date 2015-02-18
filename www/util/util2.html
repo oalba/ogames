@@ -1,0 +1,48 @@
+<html style=""><head>
+<title>Calcula porcentajes</title>
+<style type="text/css"></style></head>
+<body style="font-family: Verdana" background="../fondob.jpg">
+
+<p align="center"><b>Calcula porcentajes</b></p><b>
+<script language="JavaScript">
+
+function perc1() {
+ a = document.form1.a.value/100;
+ b = a*document.form1.b.value;
+ document.form1.total1.value = b
+ }
+function perc2() {
+ a = document.form1.c.value;
+ b = document.form1.d.value;
+ c = a/b;
+ d = c*100;
+ document.form1.total2.value = d
+ }
+
+</script>
+
+<form name="form1"><center>
+<table border="0" cellspacing="1" style="font-family: Arial; font-size: 10pt" width="531" bgcolor="#ffffff">
+<tbody><tr><td colspan="3" align="center">&nbsp;</td>
+</tr><tr>
+<td width="276">
+<p align="right">¿Cuánto es
+<input type="text" name="a" size="5">&nbsp;% de
+<input type="text" name="b" size="5">? </p></td>
+<td width="146">Respuesta: <input type="text" name="total1" size="5" maxlength="40"></td>
+<td width="96"><input type="button" value="Calcular" onclick="perc1()"></td>
+</tr><tr>
+<td width="276">
+<p align="right">¿Qué porcentaje es <input type="text" name="c" size="5">&nbsp;de
+<input type="text" name="d" size="5">? </p></td>
+<td width="146">Respuesta: <input type="text" name="total2" size="5">&nbsp;%</td>
+<td width="96"><input type="button" value="Calcular" onclick="perc2()"></td>
+</tr><tr>
+<td colspan="3" align="center"><input type="reset" value="Borrar"></td>
+</tr></tbody></table>
+
+</center></form>
+<p>
+
+
+</p></b></body></html>

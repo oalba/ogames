@@ -120,7 +120,9 @@
 /home/ubuntu/ogames/platforms/android/assets/www/spec/lib/jasmine-1.2.0/MIT.LICENSE \
 /home/ubuntu/ogames/platforms/android/assets/www/spec/lib/jasmine-1.2.0/jasmine.js \
 /home/ubuntu/ogames/platforms/android/assets/www/spec/lib/jasmine-1.2.0/jasmine.css \
+/home/ubuntu/ogames/platforms/android/assets/www/util/util2.html \
 /home/ubuntu/ogames/platforms/android/assets/www/util/util1.html \
+/home/ubuntu/ogames/platforms/android/assets/www/util/util3.html \
 /home/ubuntu/ogames/platforms/android/assets/www/jokuak/jokua13.html \
 /home/ubuntu/ogames/platforms/android/assets/www/jokuak/jokua6.html \
 /home/ubuntu/ogames/platforms/android/assets/www/jokuak/jokua7.html \
