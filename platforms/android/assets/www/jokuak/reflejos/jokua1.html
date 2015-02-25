@@ -1,0 +1,132 @@
+<html>
+  <head>
+    <title>Jokua 2</title>
+  </head>
+  <body background="../../fondob.jpg">
+<CENTER>
+<h2><p style="color: #000000; background-color: #ffffff">Demuestra lo rapido que eres.</p></h2>
+<p style="color: #000000; background-color: #ffffff">1- Pulsa Start <br>
+2- Pulsa derecha o izquierda según te lo digan.<br>
+3- Tienes 1 segundo para reaccionar y pulsar.  <br>
+4- Si tardas más, saldrá la palabra "TIEMPO".</p>
+
+<form name="ausgabe">
+  <div align="center"><center><p></p>
+
+  </center></div><div align="center"><center><p><input value="Start" name="B3" onclick="tempo3()" style="font-family: Arial; font-size: 15pt;" type="button">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+
+<script language="JavaScript">
+<!--
+
+function SymError()
+{
+  return true;
+}
+
+window.onerror = SymError;
+
+var SymRealWinOpen = window.open;
+
+function SymWinOpen(url, name, attributes)
+{
+  return (new Object());
+}
+
+window.open = SymWinOpen;
+
+//-->
+    </script>
+
+<script language="JavaScript">
+<!--
+
+function SymError()
+{
+  return true;
+}
+
+window.onerror = SymError;
+
+var SymRealWinOpen = window.open;
+
+function SymWinOpen(url, name, attributes)
+{
+  return (new Object());
+}
+
+window.open = SymWinOpen;
+
+//-->
+    </script>
+
+<script language="JavaScript"><!--
+/* Copyright (c) Torben Wolf | http://webmasterweb.de */
+x = 0;
+x2 = 0;
+x3 = 0;
+function tempo3()
+{
+x3 = 0;
+window.setTimeout("tempo()",1500);
+}
+function tempo()
+{
+document.ausgabe.versuche.value = x3;
+x = 0;
+x2 = 0;
+y = Math.random();
+if(y <= 0.5)
+{
+x = "1";
+}
+if(y >= 0.5)
+{
+x = "2";
+}
+if(x == "1")
+{
+document.ausgabe.text.value = "izquierda";
+}
+if(x == "2")
+{
+document.ausgabe.text.value = "derecha";
+}
+window.setTimeout("tempo2()",700);
+}
+function tempo2()
+{
+if(x2 == x)
+{
+document.ausgabe.text.value = "";
+x3 = x3+1;
+window.setTimeout("tempo()",200);
+}
+else
+if(x2 != x)
+{
+document.ausgabe.text.value = "¡ TIEMPO !";
+}
+}
+function gas()
+{
+x2 = "1";
+}
+function bremsen()
+{
+x2 = "2";
+}
+/* WebmasterWEB - Alles für den Webmaster | http://webmasterweb.de */ 
+// --></script><input name="text" size="10" style="border: thin solid rgb(0, 0, 0); background-color: rgb(255, 255, 0); font-family: Arial; font-size: 15pt; text-align: center;" type="text">
+  &nbsp;&nbsp;&nbsp;<input name="versuche" size="4" style="border: thin solid rgb(0, 0, 0); font-family: Arial; font-size: 15pt; background-color: rgb(255, 255, 0); text-align: center;" type="text">
+  </p>
+  </center></div><div align="center"><center><p><input value="IZQUIERDA" name="B1" onclick="gas()" style="font-family: Arial; font-size: 15pt; height: 100px" type="button"> &nbsp;&nbsp; <input value="DERECHA" name="B2" onclick="bremsen()" style="font-family: Arial; font-size: 15pt; height: 100px" type="button"></p>
+
+  </CENTER></div>
+</form>
+
+
+
+
+  </body>
+</html>
