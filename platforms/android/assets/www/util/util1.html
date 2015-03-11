@@ -83,96 +83,96 @@ function checkNum(str)
 <tr align=center>
 <td>
 <input type="button" value="    7    "
-  onClick="addChar(this.form.display, '7')">
+  onClick="addChar(this.form.display, '7')" style="height: 50px">
 </td>
 <td>
 <input type="button" value="    8    "
-  onClick="addChar(this.form.display, '8')">
+  onClick="addChar(this.form.display, '8')" style="height: 50px">
 </td>
 <td>
 <input type="button" value="    9    "
-  onClick="addChar(this.form.display, '9')">
+  onClick="addChar(this.form.display, '9')" style="height: 50px">
 </td>
 <td>
 <input type="button" value="    /     "
-  onClick="addChar(this.form.display, '/')">
+  onClick="addChar(this.form.display, '/')" style="height: 50px">
 </td>
 </tr>
 
 <tr align=center>
 <td>
 <input type="button" value="    4    "
-  onClick="addChar(this.form.display, '4')">
+  onClick="addChar(this.form.display, '4')" style="height: 50px">
 </td>
 <td>
 <input type="button" value="    5    "
-  onClick="addChar(this.form.display, '5')">
+  onClick="addChar(this.form.display, '5')" style="height: 50px">
 </td>
 <td>
 <input type="button" value="    6    "
-  onClick="addChar(this.form.display, '6')">
+  onClick="addChar(this.form.display, '6')" style="height: 50px">
 </td>
 <td>
-<input type="button" value="    *    "
-  onClick="addChar(this.form.display, '*')">
+<input type="button" value="     *    "
+  onClick="addChar(this.form.display, '*')" style="height: 50px">
 </td>
 </tr>
 
 <tr align=center>
 <td>
 <input type="button" value="    1    "
-  onClick="addChar(this.form.display, '1')">
+  onClick="addChar(this.form.display, '1')" style="height: 50px">
 </td>
 <td>
 <input type="button" value="    2    "
-  onClick="addChar(this.form.display, '2')">
+  onClick="addChar(this.form.display, '2')" style="height: 50px">
 </td>
 <td>
 <input type="button" value="    3    "
-  onClick="addChar(this.form.display, '3')">
+  onClick="addChar(this.form.display, '3')" style="height: 50px">
 </td>
 <td>
 <input type="button" value="     -    " 
-  onClick="addChar(this.form.display, '-')">
+  onClick="addChar(this.form.display, '-')" style="height: 50px">
 </td>
 </tr>
 
 <tr align=center>
 <td>
 <input type="button" value="    0    "
-  onClick="addChar(this.form.display, '0')"> 
+  onClick="addChar(this.form.display, '0')" style="height: 50px"> 
 </td>
 <td>
 <input type="button" value="     .    "
-  onClick="addChar(this.form.display, '.')"> 
+  onClick="addChar(this.form.display, '.')" style="height: 50px"> 
 </td>
 <td>
-<input type="button" value="   +/-   "
-  onClick="changeSign(this.form.display)">
+<input type="button" value="   +/-  "
+  onClick="changeSign(this.form.display)" style="height: 50px">
 </td>
 <td>
 <input type="button" value="    +    "
-  onClick="addChar(this.form.display, '+')">
+  onClick="addChar(this.form.display, '+')" style="height: 50px">
 </td>
 </tr>
 
 <tr align=center>
 <td>
 <input type="button" value="    (    "
-  onClick="addChar(this.form.display, '(')"> 
+  onClick="addChar(this.form.display, '(')" style="height: 50px"> 
 </td>
 <td>
 <input type="button" value="     )    "
-  onClick="addChar(this.form.display, ')')"> 
+  onClick="addChar(this.form.display, ')')" style="height: 50px"> 
 </td>
 <td>
-<input type="button" value="   sq    "
+<input type="button" value="   sq   "
   onClick="if (checkNum(this.form.display.value))
-	{ square(this.form) }">
+	{ square(this.form) }" style="height: 50px">
 </td>
 <td>
 <input type="button" value="    <-   "
-  onClick="deleteChar(this.form.display)">
+  onClick="deleteChar(this.form.display)" style="height: 50px">
 </td>
 </tr>
 
@@ -180,11 +180,11 @@ function checkNum(str)
 <td colspan="2">
 <input type="button" value="      =      " name="enter"
   onClick="if (checkNum(this.form.display.value))
-	{ compute(this.form) }">
+	{ compute(this.form) }" style="height: 50px">
 </td>
 <td colspan="2">
 <input type="button" value="         C          "
-  onClick="this.form.display.value = 0 ">
+  onClick="this.form.display.value = 0 " style="height: 50px">
 </td>
 </tr>
 </table>
